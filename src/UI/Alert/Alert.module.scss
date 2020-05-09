@@ -1,0 +1,84 @@
+@import "./../../GlobalStyles/scrollBar";
+
+// ALERT BODY
+.alertBody {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    max-height: 50vh;
+    overflow-y: scroll;
+    @include scrollBar(3px);
+    z-index: 1000;
+}
+
+// ALERT TEXT WRAPPER
+.textWrapper {
+    padding: 0px 15px;
+    text-align: center;
+}
+
+// ALERT CLASSES
+.successAlert {
+    @extend .alertBody;
+    background-color: #d4edda;
+    span{
+        color: #155724;
+    }
+    
+}
+
+.dangerAlert {
+    @extend .alertBody;
+    background-color: #f8d7da;
+    span {
+        color: #721c24;
+    }
+
+}
+
+.infoAlert {
+    @extend .alertBody;
+    background-color: #d1ecf1;
+    span {
+        color: #0c5460;
+    };
+  
+}
+// ICON STYLES
+.leftIcon{
+    position: absolute;
+    left : 10px;
+    top : 16px
+}
+
+.rightIcon{
+    position: absolute;
+    right : 10px;
+    top : 16px
+}
+
+// TRANSITION STYLES
+.enter {
+    opacity : 0;
+    transform: translateY(1rem);
+}
+
+.enterActive{
+    opacity: 1;
+    transform: none;
+    transition: 500ms all ease-out;
+}
+
+.exit{
+    opacity: 1;
+    transform: none;
+}
+
+.exitActive{
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: 500ms all ease-out;
+}

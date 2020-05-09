@@ -1,0 +1,16 @@
+.coreWrapper {
+    padding : 10px
+}
+
+.customSection {
+    flex-direction: column;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom : 30px;
+
+    p {
+        text-decoration: underline;
+    }
+}
+

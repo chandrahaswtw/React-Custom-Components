@@ -1,0 +1,88 @@
+// WRAPPER 
+$dropdownColor : black;
+$itemColor : rgb(49, 49, 49);
+$itemColorHover : lighten( rgb(49, 49, 49), 20);
+$selectedBackGround : #ccc;
+
+.wrapper {
+    border-bottom: 2px solid black;
+    padding : 5px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.iconStyles{
+    font-weight: bold;
+    transform: rotateZ(180deg);
+    transition: all 500ms ease-out;
+}
+
+.iconStylesRotate{
+    font-weight: bold;
+    transform: none;
+    transition: all 500ms ease-out;
+}
+
+.innerWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .spanTitle {
+        flex-grow: 1;
+        &:focus {
+            outline: none;
+        }
+    }
+
+}
+
+// DROP DOWN STYLES
+.dropDownPanel {
+    position: absolute;
+    left: 0;
+    top: 120%;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 3px #ccc;
+    z-index: 100;
+
+    & > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        & > li {
+            display: block;
+            color : $itemColor;
+            padding: 5px 10px;
+            text-align: left;
+
+            &:hover {
+                color : $itemColorHover;
+            }
+        }
+    }
+}
+
+
+.dropDownPanel > ul > li.selectedList {
+    background-color: $selectedBackGround;
+}
+
+// TEXT STYLES
+
+.textStyles {
+    border: none;
+    flex-grow: 1;
+    &:focus {
+        outline: none;
+    }
+}
+
+

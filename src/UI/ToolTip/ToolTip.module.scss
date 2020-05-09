@@ -1,0 +1,46 @@
+$borderColor: #ccc;
+$backgroundColor: #ccc;
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.wrapper .toolBox {
+    display: inline-block;
+    position: absolute;
+    visibility: hidden;
+    transform: translateX(50%) scale(0);
+    transform-origin: top;
+    top: calc(100% + 12px);
+    right: 50%;
+    background-color: $backgroundColor;
+    border: 1px $borderColor solid;
+    padding: 10px;
+    transition: visibility 0s 0.5s, opacity .2s ease-out, transform .5s cubic-bezier(0,1,.5,1);
+    min-width: 150px;
+    max-width : 250px;
+}
+
+.wrapper:hover .toolBox {
+    visibility: visible;
+    transform: translateX(50%) scale(1);
+    transition: opacity .2s ease-out, transform .5s cubic-bezier(0,1,.5,1);
+}
+
+.toolBox::before {
+    content: "";
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $borderColor;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toolTipText {
+    color: black;
+}
+
+

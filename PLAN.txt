@@ -1,0 +1,25 @@
+ROAD MAP FOR UI (NO FULL STACK)
+----------------------
+REACT NATIVE	  APRIL   (DONE)
+GIT				  APRIL	
+TYPESCRIPT		  MAY	
+PYTHON + DS ALGO  JUNE
+PWA's			  JULY
+DART			  AUG
+FLUTTER			  AUG, SEPT, OCT	
+MONGO DB          NOV
+POSTGRE SQL		  DEC
+
+<--------------- TO BE DONE BY DEC 31 2020 ----------------->
+
+
+ROAD MAP FOR ML/AI (6 MONTHS)
+-----------------------------
+TBA
+
+
+EXTRA CIRRICULAR
+----------------
+
+NORMAN LEWIS
+STOCK TRADING
