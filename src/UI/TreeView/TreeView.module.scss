@@ -1,0 +1,36 @@
+.domainWrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.appWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.domainTitle {
+    cursor: pointer;
+}
+
+.enter {
+    opacity: 0;
+}
+
+.enterActive {
+    opacity: 1;
+    transition: all 1000ms ease-out;
+}
+
+.exit {
+    opacity: 1;
+}
+
+.exitActive {
+    opacity: 0;
+    transition: all 1000ms ease-out;
+}
