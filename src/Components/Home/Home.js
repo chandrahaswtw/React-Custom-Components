@@ -3,7 +3,8 @@ import classes from './Home.module.scss';
 // import Alert from './../../UI/Alert/Alert';
 // import ToolTip from './../../UI/ToolTip/ToolTip';
 // import DropDownForm from './../DropDownForm/DropDownForm';
-import TreeView from './../../UI/TreeView/TreeView';
+// import TreeView from './../../UI/TreeView/TreeView';
+import Tags from './../../UI/Tags/Tags';
 
 const Home = (props) => {
 
@@ -53,7 +54,8 @@ const Home = (props) => {
                 <h2 className={classes.centrica}>DROPDOWNS</h2>
                 <DropDownForm></DropDownForm>
             </div> */}
-            <TreeView data = {data}></TreeView>
+            {/* <TreeView data = {data}></TreeView> */}
+            <Tags></Tags>
         </div>
     )
 }

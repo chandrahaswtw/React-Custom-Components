@@ -3,9 +3,7 @@ import classes from './TreeView.module.scss';
 
 const TreeView = props => {
 
-    const [expandable, setExpandable] = useState({
-        1: false
-    })
+    const [expandable, setExpandable] = useState("");
     const [data, setData] = useState(props.data)
 
 
